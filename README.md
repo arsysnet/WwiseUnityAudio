@@ -2,20 +2,23 @@
 Very simple tool for Unity to convert a project with Wwise to Unity Audio in order to make WebGL builds.
 
 **The objective of this tool isn't to reproduce Wwise** but to provide a way to have a project building for WebGL.
-You made a game jam with Wwise and your sad because you canno't put the web player on itch.io ?  **This tool is made for you.**
+You made a game jam with Wwise and you are sad because you cannot put the web player on itch.io ?  **This tool is made for you.**
+
+Here is some Wwise projects that also have a WebGL build thanks to this small tool : 
+- Cook'Em Up : https://carbonara.itch.io/cookem-up
 
 ## Limitations :
-- Only works for 2D project for now
+- Only works for 2D projects for now
 - Since WebGL doesn't support multithreading, audio filters like reverberation are not supported
-- Not all Wwise feature are implemented
+- Not all Wwise features are implemented
 
 ## Installation :
-- Clone this repository or download the assets package here : https://goo.gl/BCxPY7
-- Open the unity asset package in your project
+- Clone this repository or download the asset package here : https://goo.gl/BCxPY7
+- Copy the WebGLSupport folder or open the unity asset package in your project
 
 ## Instructions :
 You can convert your Unity Wwise project into a Unity Audio only project with the following steps : 
-- Replace all call to Wwise (I.E AkSoundEngine.PostEvent()) by AudioEventManager call (AudioEventManager.PostEvent())
+- Replace all calls to Wwise (I.E AkSoundEngine.PostEvent()) by AudioEventManager calls (AudioEventManager.PostEvent())
 ```csharp
 // Replace
 public void OnGameBegin()
