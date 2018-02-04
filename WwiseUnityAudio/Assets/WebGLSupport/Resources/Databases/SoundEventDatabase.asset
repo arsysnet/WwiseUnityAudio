@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b08cc140182b7d4c93611a1dfe6ff81, type: 3}
+  m_Name: SoundEventDatabase
+  m_EditorClassIdentifier: 
+  Events:
+  - EventID: 1212396878
+    EventName: Music_Play
+    EventDescription: Plays the main music
+    EventTargets:
+    - {fileID: 8300000, guid: e170245c812e32240a0254708dfb2ed7, type: 3}
+    EventAction: 1
+    EventType: 0
+    EventIsRandom: 0
+    EventIsLooping: 1
+    EventIsVolumeRandom: 1
+    EventIsPitchRandom: 0
+    EventMaxInstance: 1
+    EventVolume: 0.5
+    EventPitch: 1
+    EventToStop: 
+    EventPitchRandomRange: {x: 0, y: 0}
+    EventVolumeRandomRange: {x: -0.1, y: 0.1}
+    EventRTPC: {fileID: 0}
+  - EventID: 1212494364
+    EventName: Music_Stop
+    EventDescription: Stops the main music
+    EventTargets:
+    - {fileID: 0}
+    EventAction: 2
+    EventType: 0
+    EventIsRandom: 0
+    EventIsLooping: 0
+    EventIsVolumeRandom: 0
+    EventIsPitchRandom: 0
+    EventMaxInstance: 1
+    EventVolume: 0.5
+    EventPitch: 1
+    EventToStop: Music_Play
+    EventPitchRandomRange: {x: 0, y: 0}
+    EventVolumeRandomRange: {x: 0, y: 0}
+    EventRTPC: {fileID: 0}
+  - EventID: -1070474138
+    EventName: Music_Pitch
+    EventDescription: Sets the pitch of the main music
+    EventTargets:
+    - {fileID: 0}
+    EventAction: 3
+    EventType: 0
+    EventIsRandom: 0
+    EventIsLooping: 0
+    EventIsVolumeRandom: 0
+    EventIsPitchRandom: 0
+    EventMaxInstance: 1
+    EventVolume: 0.5
+    EventPitch: 1
+    EventToStop: Music_Play
+    EventPitchRandomRange: {x: 0, y: 0}
+    EventVolumeRandomRange: {x: 0, y: 0}
+    EventRTPC: {fileID: 0}
