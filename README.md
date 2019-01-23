@@ -8,9 +8,9 @@ Here is some Wwise projects that also have a WebGL build thanks to this small to
 - Cook'Em Up : https://carbonara.itch.io/cookem-up
 
 ## Limitations :
-- Only works for 2D projects for now
+- Only works for 2D projects (meaning 2D audio) for now
 - Since WebGL doesn't support multithreading, audio filters like reverberation are not supported
-- Not all Wwise features are implemented
+- Not all Wwise features are implemented (There are no switches, no states etc.)
 
 ## Installation :
 - Clone this repository or download the asset package here : https://goo.gl/BCxPY7
